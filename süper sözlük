@@ -1,0 +1,11 @@
+import random
+modern_sozluk = {"if":"eğer","else":"değilse","==":"eşitse","read":"oku","false":"yanlış","true":"doğru","int":" tam sayılarda tanımlama"}
+  
+soru = input("kelime giriniz")
+soru=soru.lower()
+if soru in modern_sozluk.keys():
+    print(modern_sozluk[soru])
+else:
+    print("kelime bulunamadı")
+    
+print(random.choice(modern_sozluk.values()))
